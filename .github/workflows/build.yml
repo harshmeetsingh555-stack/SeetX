@@ -12,7 +12,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.7
-      - run: unzip -q seetx_red_gaming_v3.zip -d proj
+      - run: unzip -q SEETX_Boost_Both_Smaller.zip -d proj
       - run: sed -i "s/jvmTarget '17'/jvmTarget = '17'/" proj/app/build.gradle
       - run: gradle assembleDebug
         working-directory: proj
